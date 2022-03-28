@@ -1,23 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import "semantic-ui-css/semantic.min.css";
 import { createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
+import {composeWithDevTools} from 'redux-devtools-extension';
+import nameReducer from './reducers/nameReducer.js';
 
-// Aquí importamos el reducer creado anteriormente
-import rootReducer from './redux' 
+import App from "./App";
 
-const store = createStore(
-		rootReducer,
-		composeWithDevTools()
-)
+const rootElement = document.getElementById("root");
+
+const store = createStore(nameReducer, composeWithDevTools());
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}> {/* Aquí sólamente encerramos a <App/> */}
-      <App />                {/* En el provider */}
+  <StrictMode>
+    <Provider store={store}>
+      <App />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </StrictMode>,
+  rootElement
 );
+
