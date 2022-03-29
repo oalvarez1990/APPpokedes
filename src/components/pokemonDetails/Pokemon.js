@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
-import { Container, Grid, Segment, Image, Label, Divider, Header, Icon, Button } from "semantic-ui-react";
+import { Container, Grid, Segment, Image, Label, Divider, Header, Icon, Button } from "semantic-ui-react"
 
 import HeaderApp from "./Header";
 import ProgressBar from "./ProgressBar";

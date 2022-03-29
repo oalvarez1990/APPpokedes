@@ -142,10 +142,10 @@ const Pokedex = () => {
                     <i className="fas fa-sign-out-alt"></i>
                 </button>
 
-                <h2 className="title">Pokedex</h2>
+                <h2 className="title">App Pokedex</h2>
 
                 <p className="title pokedex">
-                    Welcome {name}, here you can find your favorite pokemon
+                    Welcome {name}, you can find your favorite pokemon
                 </p>
                 <div>
                     <div className="center check-container">

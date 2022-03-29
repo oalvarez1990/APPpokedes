@@ -5,7 +5,7 @@ import {
   Switch,
   Redirect,
   Route,
-  Link,  
+  Link,
 } from "react-router-dom";
 import Beginning from "./components/beginning/Beginning.js";
 import Pokedex from "./components/pokedexList/Pokedex.js";
